@@ -1,0 +1,355 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+body{
+  background-color: black;
+  
+}  
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 80px;
+
+}
+header img{
+  display: flex;
+   width: 140px;
+  min-width: 140px;
+}
+.acessos{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+#contador{
+  color: #d45002;
+  font-size: 24px;
+}
+header .acessos p:hover{
+  border-bottom:#d45002 solid;
+}
+.first-content img,
+.social-media img,
+.text-welcome img{
+  max-width: 100%;
+  height: auto;
+}
+.first-content{
+  display: flex;
+  min-height: 400px;
+  justify-content: space-between;
+  background-image: url(src/fundo\ cesta\ 1200px.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-welcome{
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+}
+.text-welcome img{
+  width: 290px;
+  display: block;
+}
+.text-description{
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  line-height: 1.5;
+}
+.text-description span{
+  color: #d45002;
+}
+.seta{
+  
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: 21% 49%;
+  
+}
+.conect {
+  margin-top: 30px;
+  text-align: center;
+  color: #d45002;
+}
+.conect span{
+  font-size: 25px;
+  font-weight: bold;
+}
+.social-media{
+    background-color: #050505;
+}
+.social-media ul{
+  display: flex;
+  flex-direction: row;
+  
+  
+  gap: 20px;
+  width: 80%;
+  margin:20px auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  list-style: none;
+
+}
+.social-media ul li{
+  padding: 10px;
+  height: 230px;
+  width: 200px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 30px;
+}
+
+.social-media ul button a{
+  text-decoration: none;
+}
+.social-media ul li img{
+  width: 70px;
+}
+.social-media ul li .title{
+  font-weight: bold;
+  font-size: 17px;
+}
+.social-media ul li .description-list {
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 12px;
+}
+.social-media ul li button{
+    width: 130px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    transition: 0.3s ease;
+    background: transparent;
+}
+.card-tiktok{
+ border: 1px solid white;
+  box-shadow: 
+    -3px 0px 5px rgba(0, 242, 234, 0.5),
+     3px 0px 5px rgba(255, 0, 80, 0.5);
+}
+
+.btn-tiktok {
+  border: 1px solid #00f7ff;
+
+    box-shadow:
+    0 0 10px rgba(0,247,255,.3);
+}
+.btn-tiktok:hover{
+    background: #00f7ff;
+    color: black;
+}
+
+.card-instagram{
+border: 1px solid white;
+   box-shadow: 
+    0 0 5px rgba(240, 148, 51, 0.4),   /* laranja */
+    0 0 5px rgba(188, 24, 136, 0.4);   /* roxo */
+}
+.btn-insta {
+  border: 1px solid ;
+  background: 
+    linear-gradient(black, black) padding-box,
+    linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) border-box;
+  box-shadow: 0 0 10px rgba(220, 39, 67, 0.4);
+}
+
+.btn-insta:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.card-youtube{
+    border: 1px solid white;
+
+    box-shadow: 
+  0 0 5px rgba(255, 0, 0, 0.6),
+  0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.btn-youtube{
+    border: 1px solid red;
+
+    box-shadow:
+    0 0 10px rgba(255,0,0,.4);
+}
+
+.btn-youtube:hover{
+    background: red;
+}
+.card-sobre{
+  border: 1px solid;
+  box-shadow: 
+  0 0 8px rgba(212, 80, 2, 0.6),
+  0 0 20px rgba(212, 80, 2, 0.3);
+}
+.btn-projeto{
+    border: 2px solid #d45002;
+
+    box-shadow:
+    0 0 10px rgba(212,80,2,.4);
+}
+
+.btn-projeto:hover{
+    background: #d45002;
+}
+
+
+
+
+footer{
+  height: 30px;
+  font-size: 13px;
+  
+  text-align: center;
+  padding: 4px;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+@media (max-width: 1024px){
+
+  .social-media ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-media ul li{
+    width: 45%;
+  }
+
+}
+
+
+/* TABLET E CELULAR */
+@media (max-width: 768px){
+
+  header{
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    text-align: center;
+  }
+
+  header img{
+    width: 120px;
+  }
+
+  .first-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .text-welcome{
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .text-welcome img{
+    width: 220px;
+  }
+
+  .text-description{
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .seta{
+    position: static;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .conect span{
+    font-size: 22px;
+  }
+
+  .social-media ul{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social-media ul li{
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+  }
+
+}
+
+
+/* CELULAR PEQUENO */
+@media (max-width: 480px){
+
+  .text-welcome img{
+    width: 180px;
+  }
+
+  .text-description{
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .social-media ul li{
+    width: 95%;
+  }
+
+  .social-media ul li img{
+    width: 60px;
+  }
+
+  .social-media ul li .title{
+    font-size: 15px;
+  }
+
+  .social-media ul li .description-list{
+    font-size: 11px;
+  }
+
+  footer{
+    font-size: 11px;
+    padding: 8px;
+    height: auto;
+  }
+
+}

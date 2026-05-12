@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "firebase": "^12.13.0"
+  },
+  "name": "harehoops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "firebase.js",
+  "devDependencies": {
+    "vite": "^8.0.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
